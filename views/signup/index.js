@@ -60,10 +60,6 @@ inputEmail.addEventListener("input", e => {
     validateInput(inputEmail,emailValidation);
 });
 
-inputEmail.addEventListener("input", e => {
-    emailValidation = email_regexr.test(inputEmail.value)
-    validateInput(inputEmail,emailValidation);
-});
 
 password.addEventListener("input", e => {
     passValidation = pasw_regexr.test(password.value)
@@ -92,7 +88,6 @@ form.addEventListener("submit", async e => {
         setTimeout(() => { 
         notification.classList.add('hidden');
     }, 5000)
-
         inputName.value = "";
         inputEmail.value = "";
         password.value= "";
@@ -113,5 +108,4 @@ form.addEventListener("submit", async e => {
 
 
 
-// Activacion notificacion
 

@@ -1,9 +1,12 @@
 const navbar = document.querySelector('#navbar')
+console.log(navbar);
 
 const createNavHome = () => {
     navbar.innerHTML=`
+
     <div class="max-w-7xl bg-slate-500 opacity-70 h-16 mx-auto flex items-center px-4 justify-between">
     <p class="font-bold text-xl text-white">TodoApp</p>
+
     <!-- // Version movil -->
 
     <svg xmlns="http://www.w3.org/2000/svg" 
@@ -18,6 +21,7 @@ const createNavHome = () => {
         <a href="/login/" class="text-white hover:bg-gray-900 py-2 px-4 rounded-lg">Login</a>
         <a href="/signup/" class="text-white bg-slate-400 hover:bg-slate-600 py-2 px-4 rounded-lg" >Signup</a>
     </div>
+
     <!-- // menu movil -->
 
     <div class="bg-slate-700 w-2/4 fixed top-16  right-0 bottom-0 flex justify-center items-center flex-col gap-4 hidden">

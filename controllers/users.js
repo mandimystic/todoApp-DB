@@ -53,7 +53,7 @@ await transporter.sendMail({
     html: `<a href="${PAGE_URL}/verify/${savedUser.id}/${token}">Verificar correo</a>`, // html body
   });
 
-return response.status(201).json('User created, please confirm your email')
+return response.status(201).json('User created, please confirm your email');
 
 });
 
@@ -102,7 +102,7 @@ usersRouter.patch('/:id/:token', async (request, response) => {
        html: `<a href="${PAGE_URL}/verify/${id}/${token}">Verificar correo</a>`, // html body
      });
 
-   return response.status(400).json ({error: 'Link expired, we sent a new one. Check your email!'})
+   return response.status(400).json ({error: 'Link expired, we sent a new one. Check your email!'});
 
     console.log(error);
 
